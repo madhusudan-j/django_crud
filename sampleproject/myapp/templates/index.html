@@ -1,0 +1,13 @@
+
+<body>
+    <form action="/register" method="POST">
+        {% csrf_token %}
+        <h3>Enter Employee Details</h3>
+        firstname:{{ form.firstname }}
+        lastname:{{ form.secondname }}
+        email:{{ form.email }}
+        password:{{ form.password }}
+        address:{{ form.address }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
